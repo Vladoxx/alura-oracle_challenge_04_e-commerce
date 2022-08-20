@@ -1,0 +1,31 @@
+.conteudo_principal {
+    padding: 16px;
+}
+
+.titulo_star_wars .star_wars_ver_tudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo_departamento {
+    width: 102px;
+    height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.ver {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A7AE4;
+}
+
+#flecha {
+    margin-top: px;
+}

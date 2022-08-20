@@ -1,0 +1,46 @@
+/* Cabeçaloh */
+
+.cabecalho {
+    width: 100%;
+    height: 72px;
+}
+
+.cabecalho .container {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cabecalho input , .cabecalho #botao_buscar {
+    display: none;
+}
+
+.cabecalho input , .cabecalho #botao_login {
+    width: 133px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    color:#2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#imagem_alura {
+    width: 100px;
+    height: 28px;
+}
+
+#imagem_vector {
+    width: 17px;
+    height: 17px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+}
