@@ -1,0 +1,89 @@
+/* Info Empresa */
+.info_formulario {
+
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 16px;
+
+    /* height: 553px; */
+    background: #EAF2FD;
+}
+
+.info_empresa {
+    text-align: center;
+    /* width: 100%; */
+}
+.empresa_imagem {
+    
+}
+
+/* .lsta_empresa {
+
+} */
+
+.lista_empresa li {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* text-decoration: none; */
+}
+
+/* Form */
+.form {
+    /* width: 100%; */
+    /* padding: 16px; */
+}
+
+.form p {
+    width: 328px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 16px;
+}
+
+.form_group {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.form_group input {
+    width: 328px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+}
+
+.form_group textarea {
+    width: 328px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.form_group span {
+    margin-right: auto;
+}
+
+.form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 40px;
+    background: #2A7AE4;
+    margin-left: 16px;
+}
