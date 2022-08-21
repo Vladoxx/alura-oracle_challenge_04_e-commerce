@@ -24,7 +24,6 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    /* padding: 16px; */
 }
 
 .ver {
@@ -53,6 +52,7 @@
 
 .produto_imagen, .produto_titulo, .produto_preco, .ver_produto {
     margin-top: 8px;
+    /* gap: 8px; */
 }
 
 .produto_imagen {
@@ -81,7 +81,6 @@
 .ver_produto {
     width: 80px;
     height: 16px; 
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

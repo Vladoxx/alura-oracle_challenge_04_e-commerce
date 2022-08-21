@@ -8,11 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 32px 0 16px;
     width: 100%;
     gap: 16px;
-
-    /* height: 553px; */
     background: #EAF2FD;
 }
 
@@ -21,7 +19,7 @@
     /* width: 100%; */
 }
 .empresa_imagem {
-    
+    margin-bottom: 32px;
 }
 
 /* .lsta_empresa {
@@ -50,40 +48,46 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .form_group {
-    text-align: center;
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 16px;  */
 }
 
 .form_group input {
-    width: 328px;
+    /* width: 328px; */
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
-
+    border: none;
 }
 
 .form_group textarea {
-    width: 328px;
+    /* width: 328px; */
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
+    border: none;
 }
 
-.form_group span {
+/* .form_group span {
     margin-right: auto;
-}
+    align-items: flex-start;
+} */
 
 .form button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: -8px;
     width: 151px;
     height: 40px;
     background: #2A7AE4;
-    margin-left: 16px;
+    border: none;
+    color: #EAF2FD;
 }
