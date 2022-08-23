@@ -1,11 +1,3 @@
-/* .conteudo_principal {
-
-} */
-
-/* .titulo_star_wars {
-
-} */
-
 .ver_tudo {
     display: flex;
     justify-content: space-between;
@@ -18,8 +10,6 @@
 }
 
 .titulo_departamento {
-    width: 102px;
-    height: 26px;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -34,9 +24,9 @@
     color: #2A7AE4;
 }
 
-/* #flecha {
-
-} */
+.ver_tudo .ver {
+    vertical-align: middle;
+}
 
 /* Containers */
 .container {
@@ -46,23 +36,16 @@
     gap: 16px;
 }
 
-/* .produtos {
-
-} */
-
 .produto_imagen, .produto_titulo, .produto_preco, .ver_produto {
     margin-top: 8px;
-    /* gap: 8px; */
 }
 
 .produto_imagen {
     width: 100%;
-    height: 180px;
+    height: 174px;
 }
 
 .produto_titulo {
-    width: 156px;
-    height: 16px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -70,8 +53,6 @@
 }
 
 .produto_preco {
-    width: 156px;
-    height: 19px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -79,8 +60,6 @@
 }
 
 .ver_produto {
-    width: 80px;
-    height: 16px; 
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -90,85 +69,34 @@
 
 
 @media (min-width: 640px) {
-    /* .ver_tudo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 16px 0 16px;
-    }
-    
-    .ver_tudo a {
-        text-decoration: none;
-    }
-    
-    .titulo_departamento {
-        width: 102px;
-        height: 26px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;
+    .ver_tudo {
+        padding: 32px 32px 0 32px;
     }
     
     .ver {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        color: #2A7AE4;
+        font-size: 16px;
     }
-    
-    /* #flecha {
-    
-    } */
-    
+
+    .ver_tudo .ver {
+        vertical-align: middle;
+    }
+
     /* Containers */
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 16px;
-        gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 16px 32px 32px 32px;
     }
-    
-    /* .produtos {
-    
-    } */
     
     .produto_imagen, .produto_titulo, .produto_preco, .ver_produto {
         margin-top: 8px;
-        /* gap: 8px; */
     }
     
     .produto_imagen {
-        width: 100%;
-        height: 180px;
+        height: 174px;
     }
-    
-    .produto_titulo {
-        width: 156px;
-        height: 16px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-    }
-    
-    .produto_preco {
-        width: 156px;
-        height: 19px;
-        font-style: normal;
-        font-weight: 700;
+  
+    .ver_produto {
         font-size: 16px;
         line-height: 19px;
     }
-    
-    .ver_produto {
-        width: 80px;
-        height: 16px; 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        color: #2A7AE4;
-    } */
 }
