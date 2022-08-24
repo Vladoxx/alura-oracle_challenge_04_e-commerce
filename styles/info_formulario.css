@@ -87,26 +87,24 @@
 @media (min-width: 1065px) {
 
     .info_container {
-        padding: 64px 152px 32px 152px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        padding: 64px 152px 55px 152px;
+        text-align: left;
         gap: 112px;
     }
     
     .info_empresa {
         display: flex;
-        /* width: 40%; */
-        width: 100%;
+        flex-direction: row;
         justify-content: space-between;
+        width: 50%;
+        margin-top: -23px;
     }
 
-    .lista_empresa {
-        /* margin-top: -23px; */
+    .empresa_imagem {
+        margin-top: 30px;
     }
 
     .form {
-        /* width: 60%; */
-        width: 100%;
+        width: 50%;
     }    
-
 }
