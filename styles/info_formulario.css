@@ -83,3 +83,30 @@
         width: 60%;
     }
 }
+
+@media (min-width: 1065px) {
+
+    .info_container {
+        padding: 64px 152px 32px 152px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 112px;
+    }
+    
+    .info_empresa {
+        display: flex;
+        /* width: 40%; */
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .lista_empresa {
+        /* margin-top: -23px; */
+    }
+
+    .form {
+        /* width: 60%; */
+        width: 100%;
+    }    
+
+}
