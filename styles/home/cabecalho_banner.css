@@ -55,8 +55,13 @@
     height: 192px;
 }
 
+.banner_tablet {
+    display: none;
+}
+
 .banner_desktop {
     display: none;
+    width: 100%;
 }
 
 
@@ -122,12 +127,13 @@
     
     /* Banner */
     .banner {
-        width: 100%;
-        height: 352px;
+        display: none;
     }
 
-    .banner_desktop {
-        display: none;
+    .banner_tablet {
+        display: block;
+        width: 100%;
+        height: 352px;
     }
 }
 
@@ -165,7 +171,6 @@
     
     #botao_login {
         width: 166px;
-        /* height: 40px; */
     }
     
     #imagem_vector_1 {
@@ -179,13 +184,12 @@
     }
     
     /* Banner */
-    .banner {
+    .banner_tablet {
         display: none;
     }
 
     .banner_desktop {
         display: block;
-        width: 100%;
     }
 
 }
