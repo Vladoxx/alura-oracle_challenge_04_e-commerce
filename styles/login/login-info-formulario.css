@@ -63,7 +63,7 @@
     color: #EAF2FD;
 }
 
-/* @media  (min-width: 640px) {
+@media  (min-width: 640px) {
     .info_container {
         flex-direction: row;
         padding: 32px 32px 0 32px;
@@ -95,7 +95,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 50%;
+        width: 55%;
         margin-top: -23px;
     }
 
@@ -104,6 +104,6 @@
     }
 
     .form {
-        width: 50%;
+        width: 45%;
     }    
-} */
+}
