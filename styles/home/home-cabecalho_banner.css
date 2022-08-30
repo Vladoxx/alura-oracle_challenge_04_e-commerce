@@ -73,7 +73,7 @@
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .cabecalho .container {
         padding: 16px 32px 16px 32px;
     }
