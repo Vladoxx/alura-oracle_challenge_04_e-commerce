@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     background: #EAF2FD;
+    margin-top: 32px;
     padding: 32px 16px 16px;
 }
 
@@ -34,6 +35,7 @@
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
+    /* padding: 0 16px 0; */
 }
 
 .form_group input {
@@ -88,6 +90,7 @@
     .info_container {
         padding: 64px 152px 55px 152px;
         text-align: left;
+        margin: 0;
         gap: 112px;
     }
     
@@ -95,7 +98,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 55%;
+        width: 50%;
         margin-top: -23px;
     }
 
