@@ -17,28 +17,33 @@
 <body>
 
     <header class="cabecalho">
-        <div class="cabecalho_container">
+        <div class="cabecalho__container">
     
             <a href="../index.html"><img id="alura_logo" src="../img/header_banner/alura_geek_logo.png" alt="Home"></a>
             
-            <a href=""><button id="botao_menu">Menu administrador</button></a>
-            
             <div class="buscador">
-                <input type="text" placeholder="Digite seu produto">
+                <input type="text" placeholder="O que você deseja encontrar?">
                 <button id="botao_buscar"><img id="imagem_vector_1" src="../img/header_banner/vector.png" alt="Buscador"></button>
             </div>
+
+            <a href=""><button id="botao_menu">Menu administrador</button></a>
+           
+            <button id="botao_externo"><img id="imagem_vector_2" src="../img/header_banner/vector.png" alt="Buscador"></button>
+
         </div>
     </header>
 
     <main class="conteudo_principal">
 
         <section class="adicionar-produto">
+
             <h2>Adicionar novo produto</h2>
+            
             <input class="url_imagem" type="email" placeholder="URL da imagem">
             <input class="categoria" type="text" placeholder="Categoria">
             <input class="nome_produto" type="text" placeholder="Nome do produto">
             <input class="preco_produto" type="text" placeholder="Preço do produto">
-            <textarea name="" class="textarea" cols="30" rows="10" placeholder="Descripção do produto"></textarea>
+            <textarea name="" class="textarea" cols="30" rows="10" placeholder="Descripção do produto" autocomplete="off" rows="7" required=""></textarea>
             <button>Adicionar produto</button>
         </section>
 

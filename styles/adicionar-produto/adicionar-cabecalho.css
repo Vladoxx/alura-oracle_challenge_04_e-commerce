@@ -1,9 +1,4 @@
-/* .cabecalho {
-    width: 100%;
-    height: 72px;
-} */
-
-.cabecalho .cabecalho_container {
+.cabecalho__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,14 +27,13 @@
     line-height: 16px;
 }
 
-.buscador button {
-    border: none;
-    background: transparent;
-}
-
 .buscador_logo {
     width: 17.05px;
     height: 17.06px;
+}
+
+#imagem_vector_1 {
+    display: none;
 }
 
 #botao_menu {
@@ -58,12 +52,20 @@
     cursor: pointer;
 }
 
+#botao_buscar {
+    border: none;
+    background: transparent;
+}
+
+#botao_externo {
+    border: none;
+    background: transparent;
+}
+
 @media (min-width: 768px) {
     
-    .cabecalho .cabecalho_container {
-        justify-content: flex-start;
+    .cabecalho__container {
         padding: 16px 32px;
-        gap: 32px;
     }
     
     .buscador {
@@ -72,8 +74,6 @@
         height: 40px;
         background: #F5F5F5;
         border-radius: 20px;
-        align-items: center;
-        justify-content: space-between;
         padding: 0 16px;
     }
 
@@ -81,36 +81,37 @@
         display: block;
     } 
 
-    .buscador button {
-        border: none;
-        background: transparent;
+    #imagem_vector_1 {
+        display: block;
+    }
+
+    #imagem_vector_2 {
+        display: none;
+    }
+
+    #botao_menu:hover {
+        cursor: pointer;
+    }
+
+    #botao_externo {
+        display: none;
     }
 }
 
-
 @media (min-width: 1115px) {
 
-    .cabecalho .cabecalho_container {
-        height: 114px;
+    .cabecalho__container {
+        height: 115px;
         padding: 0 152px;
-        gap: 32px;
     }
 
-    a .alura_logo {
+    #alura_logo {
         width: 176px;
         height: 50px;
     }
     
     .buscador {
         width: 393px;
-    }
-
-    .buscador input {
-        display: block;
-    } 
-
-    .buscador button {
-        border: none;
-        background: transparent;
+        justify-content: space-between;
     }
 }
