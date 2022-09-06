@@ -49,7 +49,7 @@ a .alura_logo {
 }
 
 #imagem_produto {
-    background-image: url("/img/star_wars/star_war_01.png");
+    background-image: url("../../img/star_wars/star_war_01.png");
     background-repeat: no-repeat;
     background-size: 100% 192px;
     height: 192px;
