@@ -38,6 +38,10 @@
     gap: 16px;
 }
 
+.produtos a {
+    text-decoration: none;
+}
+
 .produtos_extras {
     display: none;
 }
