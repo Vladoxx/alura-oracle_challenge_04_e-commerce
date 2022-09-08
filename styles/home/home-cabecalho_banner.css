@@ -58,20 +58,47 @@
 }
 
 /* Banner */
-.banner {
+.banner_info-botao {
+    margin-top: -115px;
+    padding: 0 16px;
+}
+
+.banner_image {
     width: 100%;
     height: 192px;
 }
 
-.banner_tablet {
-    display: none;
+.banner_titulo {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
 
-.banner_desktop {
-    display: none;
-    width: 100%;
+.banner_desconto {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
+.banner_botao {
+    width: 122px;
+    height: 42px;
+    background: #2A7AE4;
+    border: #2A7AE4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;   
+    color: #FFFFFF;
+}
+
+.banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+    margin-bottom: 8px;
+}
 
 @media (min-width: 768px) {
     .cabecalho .container {
@@ -96,10 +123,7 @@
     .buscador input {
         width: 159px;
         height: 16px;
-        font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16px; 
         color: #A2A2A2; 
         background: #F5F5F5;
         outline: none;
@@ -127,14 +151,30 @@
     }
     
     /* Banner */
-    .banner {
-        display: none;
+    .banner_info-botao {
+        margin-top: -195px;
+        padding: 0 32px 32px;
     }
 
-    .banner_tablet {
-        display: block;
+    .banner_image {
         width: 100%;
         height: 352px;
+    }
+
+    .banner_titulo {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .banner_desconto {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+        margin-bottom: 16px;
     }
 }
 
@@ -181,12 +221,20 @@
     }
     
     /* Banner */
-    .banner_tablet {
-        display: none;
+    .banner_info-botao {
+        margin-top: -205px;
+        padding: 0 152px 32px;
     }
 
-    .banner_desktop {
-        display: block;
-        height: 352px;
+    .banner_botao {
+        width: 130px;
+        height: 51px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+        margin-bottom: 16px;
     }
 }

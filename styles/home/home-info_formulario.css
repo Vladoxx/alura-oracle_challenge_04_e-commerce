@@ -14,13 +14,16 @@
     margin-bottom: 32px;
 }
 
+.empresa_imagem img {
+    vertical-align: middle;
+}
+
 .lista_empresa li {
     margin-bottom: 16px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    /* text-decoration: none; */
 }
 
 .form p {
@@ -31,24 +34,99 @@
     margin-bottom: 8px;
 }
 
-.form_group {
+/* QUITAR INPUT */
+.form_group_input {          
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
 }
 
-.form_group input {
+.form_group_input input {
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
     border: none;
+    outline: none;
+    transition: all .3s ease-out;
+    color: #464646;
+    /* margin: 4px 0 0 12px; */
+}
+/* QUITAR INPUT */
+
+/* TESTE */
+.form_group_input {
+    position: relative;
 }
 
-.form_group textarea {
+.form_group_input input:required:invalid + label {
+    color: red;
+}
+
+.form_group_input input:focus{
+    border-bottom: 2px solid #3951b2;
+}
+
+/* .form_group_input input::placeholder{
+    color:transparent;
+} */
+
+.form_group_input label{
+    pointer-events: none;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    /* margin-top: 13px; */
+    transition: all .3s ease-out;
+}
+
+.form_group_input input:required:invalid + label{
+    color: red;
+}
+
+.form_group_input input:focus:required:invalid{
+    border-bottom: 2px solid red;
+}
+
+.form_group_input input:required:invalid + label:before{
+    content: '*';
+}
+
+.form_group_input input:focus + label,
+.form_group_input input:not(:placeholder-shown) + label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0;
+    color: #A2A2A2;
+}
+
+/* TESTE */
+
+.form_group_textarea {          
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group_textarea textarea {
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
     border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    outline: none;
+    padding: 16px 12px;
+}
+
+.form_group_textarea textarea:focus{
+    border-bottom: 2px solid #3951b2;
 }
 
 .form button {
@@ -62,12 +140,14 @@
     background: #2A7AE4;
     border: none;
     color: #EAF2FD;
+    outline: none   ;
 }
 
 @media  (min-width: 768px) {
     .info_container {
         flex-direction: row;
-        padding: 32px 32px 0 32px;
+        padding: 32px 32px 0;
+        margin-top: -32px;
     }
     
     .info_empresa {
@@ -90,6 +170,7 @@
         padding: 64px 152px 55px 152px;
         text-align: left;
         gap: 112px;
+        margin-top: 8px;
     }
     
     .info_empresa {
