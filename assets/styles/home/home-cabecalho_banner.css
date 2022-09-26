@@ -57,6 +57,10 @@
     height: 17px;
 }
 
+#imagem_vector_1:hover {
+    cursor: pointer;
+}
+
 /* Banner */
 .banner_info-botao {
     margin-top: -115px;
@@ -98,6 +102,10 @@
 
 .banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
     margin-bottom: 8px;
+}
+
+.banner_botao:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {

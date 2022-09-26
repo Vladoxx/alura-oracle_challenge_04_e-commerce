@@ -1,4 +1,9 @@
-.cabecalho__container {
+/* .cabecalho {
+    width: 100%;
+    height: 72px;
+} */
+
+.cabecalho .cabecalho_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +12,7 @@
     background: #FFFFFF;
 }
 
-#alura_logo {
+a .alura_logo {
     width: 100px;
     height: 28px;
 }
@@ -27,45 +32,26 @@
     line-height: 16px;
 }
 
+.buscador button {
+    border: none;
+    background: transparent;
+}
+
 .buscador_logo {
     width: 17.05px;
     height: 17.06px;
 }
 
-#imagem_vector_1 {
-    display: none;
-}
-
-#botao_menu {
-    width: 166px;
-    height: 40px;
-    border: 1px solid #2A7AE4;
-    color:#2A7AE4;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    background-color: #FFFFFF;
-}
-
-#botao_menu:hover {
+#imagem_vector:hover {
     cursor: pointer;
-}
-
-#botao_buscar {
-    border: none;
-    background: transparent;
-}
-
-#botao_externo {
-    border: none;
-    background: transparent;
 }
 
 @media (min-width: 768px) {
     
-    .cabecalho__container {
+    .cabecalho .cabecalho_container {
+        justify-content: flex-start;
         padding: 16px 32px;
+        gap: 32px;
     }
     
     .buscador {
@@ -74,6 +60,8 @@
         height: 40px;
         background: #F5F5F5;
         border-radius: 20px;
+        align-items: center;
+        justify-content: space-between;
         padding: 0 16px;
     }
 
@@ -81,37 +69,36 @@
         display: block;
     } 
 
-    #imagem_vector_1 {
-        display: block;
-    }
-
-    #imagem_vector_2 {
-        display: none;
-    }
-
-    #botao_menu:hover {
-        cursor: pointer;
-    }
-
-    #botao_externo {
-        display: none;
+    .buscador button {
+        border: none;
+        background: transparent;
     }
 }
 
+
 @media (min-width: 1115px) {
 
-    .cabecalho__container {
-        height: 115px;
+    .cabecalho .cabecalho_container {
+        height: 114px;
         padding: 0 152px;
+        gap: 32px;
     }
 
-    #alura_logo {
+    a .alura_logo {
         width: 176px;
         height: 50px;
     }
     
     .buscador {
         width: 393px;
-        justify-content: space-between;
+    }
+
+    .buscador input {
+        display: block;
+    } 
+
+    .buscador button {
+        border: none;
+        background: transparent;
     }
 }

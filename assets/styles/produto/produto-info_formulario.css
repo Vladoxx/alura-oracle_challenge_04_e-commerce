@@ -34,6 +34,7 @@
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
+    /* padding: 0 16px 0; */
 }
 
 .form_group input {
@@ -63,6 +64,10 @@
     color: #EAF2FD;
 }
 
+.form button:hover {
+    cursor: pointer;
+}
+
 @media  (min-width: 640px) {
     .info_container {
         flex-direction: row;
@@ -88,6 +93,7 @@
     .info_container {
         padding: 64px 152px 55px 152px;
         text-align: left;
+        margin: 0;
         gap: 112px;
     }
     
@@ -95,7 +101,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 55%;
+        width: 50%;
         margin-top: -23px;
     }
 

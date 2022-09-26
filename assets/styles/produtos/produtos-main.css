@@ -27,6 +27,10 @@
     color: #FFFFFF;
 }
 
+.adicionar_produto:hover {
+    cursor: pointer;
+}
+
 .principal__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,32 +118,3 @@
     }
 
 }
-
-
-
-
-
-/* .teste {
-    display: flex;
-}
-
-.foto {
-    position: absolute;
-}
-
-.lixo {
-    height: 18px;
-    width: 14px;
-    left: 90px;
-    top: 10px;
-    border-radius: 0px;
-    position: relative;
-} */
-
-/* .lapiz {
-    width: 18px;
-    height: 18px;
-    top: 10px;
-    left: 110px;
-    position: relative;
-} */

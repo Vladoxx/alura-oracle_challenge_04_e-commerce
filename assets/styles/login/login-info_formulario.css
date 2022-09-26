@@ -63,6 +63,10 @@
     color: #EAF2FD;
 }
 
+.form button:hover {
+    cursor: pointer;
+}
+
 @media  (min-width: 640px) {
     .info_container {
         flex-direction: row;

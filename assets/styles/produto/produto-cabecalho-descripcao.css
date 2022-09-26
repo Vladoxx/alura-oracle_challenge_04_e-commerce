@@ -17,6 +17,10 @@ a .alura_logo {
     margin: 0;
 }
 
+#imagem_vector:hover {
+    cursor: pointer;
+}
+
 .buscador input {
     display: none;
 

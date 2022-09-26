@@ -51,6 +51,7 @@
     color: #464646;
     /* margin: 4px 0 0 12px; */
 }
+
 /* QUITAR INPUT */
 
 /* TESTE */
@@ -141,6 +142,10 @@
     border: none;
     color: #EAF2FD;
     outline: none   ;
+}
+
+.form button:hover {
+    cursor: pointer;
 }
 
 @media  (min-width: 768px) {
