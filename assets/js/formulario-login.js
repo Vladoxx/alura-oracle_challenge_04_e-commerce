@@ -81,6 +81,7 @@ function verification_login() {
         alert('O campo "senha" não é válido.');
     } else {
         alert("Enviado com sucesso.");
-        location.href = "http://assets/html/adiciona-produto.html";
+        // location.href = "http://assets/html/adiciona-produto.html";
+        location.href = "http://alura-oracle_challenge_04_e-commerce/assets/html/adiciona-produto.html";
     }
 }
