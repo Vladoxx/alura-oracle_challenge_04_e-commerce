@@ -28,11 +28,13 @@
 
     <main class="conteudo_principal">
         <section>
-            <form class="login">
+            <form class="login_form">
                 <h2>Iniciar Sessão</h2>
-                <input class="input_email" type="email" placeholder="Escreva seu email" required="">
-                <input class="input_senha" type="text" placeholder="Escreva sua senha" required="">
-                <button>Entrar</button>
+                <input class="email" type="email" name="email" placeholder="Escreva seu email" onkeyup="validationEmail()" autocomplete="off" required>
+                <p class="alert_login" id="msg_email"></p>
+                <input class="senha" type="text" placeholder="Escreva sua senha" onkeyup="validationSenha()" autocomplete="off" required>
+                <p class="alert_login" id="msg_senha"></p>
+                <button class="login_button" type="button" onclick="verification_login()">Entrar</button>
             </form>
         </section>
 
@@ -73,7 +75,7 @@
                             <span class="alert" id="msg_textarea"></span>
                         </div>
         
-                        <button type="button" onclick="verification()">Enviar mensagem</button>
+                        <button class="rodape_button" type="button" onclick="verification()">Enviar mensagem</button>
         
                     </form>
         
@@ -89,6 +91,7 @@
     </footer>
 
     <script src="../js/formulario-contato.js"></script>
+    <script src="../js/formulario-login.js"></script>
 
 </body>
 </html>
