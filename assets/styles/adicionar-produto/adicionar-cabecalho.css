@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+#imagem_vector_2:hover {
+    cursor: pointer;
+}
+
 #botao_menu {
     width: 166px;
     height: 40px;
@@ -54,6 +58,9 @@
 
 #botao_menu:hover {
     cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
 }
 
 #botao_buscar {

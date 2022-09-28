@@ -54,6 +54,10 @@
     color: #2A7AE4;
 }
 
+.ver_produto:hover {
+    color: #bb4349;
+}
+
 @media (min-width: 768px) {
 
     .conteudo-principal {
@@ -68,10 +72,6 @@
         padding: 16px 32px 16px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
-    /* .produtos_extras {
-        display: none;
-    } */
 
     .ver_produto {
         font-size: 16px;

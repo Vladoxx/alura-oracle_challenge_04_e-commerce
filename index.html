@@ -50,7 +50,7 @@
             <div class="ver_tudo caixa">
                 <h2 class="titulo_departamento" id="star_war_titulo">Star Wars</h2>
                 <a href="./assets/html/produtos.html">
-                    <p class="ver">Ver tudo<img id="flecha" class="ver" src="./assets/img/star_wars/flecha.png" alt="Ver tudo">
+                    <p class="ver">Ver tudo<img id="flecha" class="ver" src="./assets/img/star_wars/flecha.png" alt="">
                     </p>
                 </a>
             </div>
@@ -283,16 +283,18 @@
                 <p><strong>Fale conosco</strong></p>
 
                 <div class="form_group_input">
-                    <input type="text" autocomplete="off">
-                    <label>Nome</label>
+                    <input type="text" id="name" name="name" onkeyup="validationName()" autocomplete="off" required>
+                    <label class="name">Nome</label>
+                    <span class="alert" id="msg_name"></span>
                 </div>
 
                 <div class="form_group_textarea">
-                    <textarea rows="7" autocomplete="off"></textarea>
-                    <label>Escreva sua mensagem</label>
+                    <textarea rows="7" id="textarea" onkeyup="validationTextarea()" autocomplete="off" required></textarea>
+                    <label class="textarea">Escreva sua mensagem</label>
+                    <span class="alert" id="msg_textarea"></span>
                 </div>
 
-                <button>Enviar mensagem</button>
+                <button type="button" onclick="verification()">Enviar mensagem</button>
 
             </form>
 
@@ -304,6 +306,8 @@
         <p>Desenvolvido por Wlad Kochmansky</p>
         <p>2022</p>
     </footer>
+
+    <script src="./assets/js/formulario-contato.js"></script>
 
 </body>
 

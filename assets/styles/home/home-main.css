@@ -80,6 +80,10 @@
     color: #2A7AE4;
 }
 
+.ver_produto:hover {
+    color: #bb4349;
+}
+
 .produto_titulo, .produto_preco, .ver_produto {
     margin-top: 8px;
 }

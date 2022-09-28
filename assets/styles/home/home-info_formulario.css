@@ -34,7 +34,6 @@
     margin-bottom: 8px;
 }
 
-/* QUITAR INPUT */
 .form_group_input {          
     margin-bottom: 16px;
     display: flex;
@@ -49,65 +48,52 @@
     outline: none;
     transition: all .3s ease-out;
     color: #464646;
-    /* margin: 4px 0 0 12px; */
-}
-
-/* QUITAR INPUT */
-
-/* TESTE */
-.form_group_input {
-    position: relative;
-}
-
-.form_group_input input:required:invalid + label {
-    color: red;
+    padding-left: 12px;
+    padding-bottom: 3px;
 }
 
 .form_group_input input:focus{
-    border-bottom: 2px solid #3951b2;
+    border-bottom: 2px solid #04124b;
 }
 
-/* .form_group_input input::placeholder{
-    color:transparent;
-} */
+.form_group {
+    position: relative;
+}
 
-.form_group_input label{
-    pointer-events: none;
+.form label {
     position: absolute;
-    top: 8px;
-    left: 12px;
-    /* margin-top: 13px; */
-    transition: all .3s ease-out;
+    margin-top: 25px;
+    pointer-events: none;
+    transition: .5;
+    padding: 0 12px;
 }
 
-.form_group_input input:required:invalid + label{
-    color: red;
-}
+.form input:focus ~ label,
+.form input:valid ~ label
 
-.form_group_input input:focus:required:invalid{
-    border-bottom: 2px solid red;
-}
-
-.form_group_input input:required:invalid + label:before{
-    content: '*';
-}
-
-.form_group_input input:focus + label,
-.form_group_input input:not(:placeholder-shown) + label{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    margin-top: 0;
+{
+    transform: translateY(-20px);
+    font-size: 14px;
     color: #A2A2A2;
+    transition: .35s;
 }
 
-/* TESTE */
+.form span {
+    pointer-events: none;
+    transition: .5;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
 
 .form_group_textarea {          
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
+}
+
+.form .textarea {
+    margin-top: 20px;
 }
 
 .form_group_textarea textarea {
@@ -123,11 +109,22 @@
     align-items: center;
     color: #464646;
     outline: none;
+    resize: none;
     padding: 16px 12px;
 }
 
 .form_group_textarea textarea:focus{
-    border-bottom: 2px solid #3951b2;
+    border-bottom: 2px solid #04124b;
+}
+
+.form textarea:focus ~ label,
+.form textarea:valid ~ label
+
+{
+    visibility: hidden;
+    font-size: 14px;
+    color: #A2A2A2;
+    transition: .35s;
 }
 
 .form button {
@@ -146,6 +143,9 @@
 
 .form button:hover {
     cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
 }
 
 @media  (min-width: 768px) {

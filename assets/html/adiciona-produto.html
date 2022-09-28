@@ -35,17 +35,21 @@
 
     <main class="conteudo_principal">
 
-        <section class="adicionar-produto">
+        <section>
+            <form class="adicionar-produto">
+    
+                <h2>Adicionar novo produto</h2>
+                
+                <input class="url_imagem" type="email" placeholder="URL da imagem" required="">
+                <input class="categoria" type="text" placeholder="Categoria" required="">
+                <input class="nome_produto" type="text" placeholder="Nome do produto" required="">
+                <input class="preco_produto" type="text" placeholder="Preço do produto" required="">
+                <textarea name="" class="textarea" cols="30" rows="10" placeholder="Descripção do produto" autocomplete="off" rows="7" required=""></textarea>
+                <button>Adicionar produto</button>
 
-            <h2>Adicionar novo produto</h2>
-            
-            <input class="url_imagem" type="email" placeholder="URL da imagem">
-            <input class="categoria" type="text" placeholder="Categoria">
-            <input class="nome_produto" type="text" placeholder="Nome do produto">
-            <input class="preco_produto" type="text" placeholder="Preço do produto">
-            <textarea name="" class="textarea" cols="30" rows="10" placeholder="Descripção do produto" autocomplete="off" rows="7" required=""></textarea>
-            <button>Adicionar produto</button>
+            </form>
         </section>
+
 
         <section class="info_formulario">
             
@@ -72,18 +76,20 @@
         
                         <p><strong>Fale conosco</strong></p>
         
-                        <div class="form_group">
-                            <input autocomplete="off" id="name" type="text" name="name" required>
-                            <span>Nome</span>
+                        <div class="form_group_input">
+                            <input type="text" id="name" name="name" onkeyup="validationName()" autocomplete="off" required>
+                            <label class="name">Nome</label>
+                            <span class="alert" id="msg_name"></span>
                         </div>
-        
-                        <div class="form_group">
-                            <textarea autocomplete="off" id="textarea" rows="7" required></textarea>
-                            <span>Messagem</span>
+
+                        <div class="form_group_textarea">
+                            <textarea rows="7" id="textarea" onkeyup="validationTextarea()" autocomplete="off" required></textarea>
+                            <label class="textarea">Escreva sua mensagem</label>
+                            <span class="alert" id="msg_textarea"></span>
                         </div>
-        
-                        <button>Enviar mensagem</button>
-        
+
+                        <button type="button" onclick="verification()">Enviar mensagem</button>
+                
                     </form>
         
                 </div>
@@ -96,6 +102,8 @@
         <p>Desenvolvido por Wlad Kochmansky</p>
         <p>2022</p>
     </footer>
+
+    <script src="../js/formulario-contato.js"></script>
 
 </body>
 </html>

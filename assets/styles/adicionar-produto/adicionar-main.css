@@ -54,6 +54,9 @@
 
 .adicionar-produto button:hover {
     cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
 }
 
 @media (min-width: 768px) {
