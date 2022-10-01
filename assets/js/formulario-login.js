@@ -80,8 +80,9 @@ function verification_login() {
     } else if (!validSenha) {
         alert('O campo "senha" não é válido.');
     } else {
-        alert("Enviado com sucesso.");
+        // alert("Enviado com sucesso.");
         // location.href = "http://assets/html/adiciona-produto.html";
+        // location.href = "http://127.0.0.1:5500/assets/html/adiciona-produto.html";
         location.href = "https://vladoxx.github.io/alura-oracle_challenge_04_e-commerce/assets/html/adiciona-produto.html";
     }
 }

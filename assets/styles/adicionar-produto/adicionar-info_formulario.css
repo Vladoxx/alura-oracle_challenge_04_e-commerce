@@ -56,16 +56,13 @@
     border-bottom: 2px solid #04124b;
 }
 
-.form_group {
-    position: relative;
-}
-
 .form label {
     position: absolute;
     margin-top: 25px;
     pointer-events: none;
     transition: .5;
     padding: 0 12px;
+    color: #A2A2A2;
 }
 
 .form input:focus ~ label,
@@ -90,10 +87,6 @@
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
-}
-
-.form .textarea {
-    margin-top: 20px;
 }
 
 .form_group_textarea textarea {
